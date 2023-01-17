@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main(){
+
+    FILE *vector=NULL;
+    char buffer[100];
+    double pi;
+
+    vector=fopen("vector.txt","r+");
+
+    vector=fopen("vector1.txt","w");
+
+        if (vector==NULL){
+        printf("No se puede abrir el archivo");
+        return -1;
+    }
+
+    int numero = 3;
+        for(int i=1; i<100; i++){
+        fprintf(vector,"%d\n",i * numero);
+
+    }
+
+     fclose(vector);
+     return 0;
+}
