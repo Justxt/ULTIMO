@@ -16,7 +16,7 @@ int main(){
     }
 
     int numero = 3;
-        for(int i=1; i<100; i++){
+        for(int i=0; i<100; i++){
         fprintf(vector,"%d\n",i * numero);
 
     }
